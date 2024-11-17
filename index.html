@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/logo.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kicks by 38</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/9d440ea037.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+
+	<div class="form-box" id="formBox">
+	<h1 id="title">Sign Up</h1>
+	<form>
+		<div class="input-group">
+			<div class="input-field" id="nameField">
+				<i class="fa-solid fa-user"></i>
+				<input type="text" placeholder="Name">
+			</div>
+			<div class="input-field">
+				<i class="fa-solid fa-envelope"></i>
+				<input type="email" placeholder="Email" required>
+			</div>
+			<div class="input-field">
+				<i class="fa-solid fa-lock"></i>
+				<input type="password" placeholder="Password" required>
+			</div>
+			<p>Lost Password <a href="#">Click Here!</a> </p>
+			<button id="submit">Sign Up</button>
+		</div>
+		
+	</form>
+</div>
+
+               
+<section id="banner">
+	<div class="btn-field">
+			<button type="button" id="signupBtn">Sign up</button>
+			<button type="button" id="signinBtn">Sign in</button>
+		</div>
+	<div class="banner-text">
+		<h1>Kicks by 38</h1>
+		<p>Walk in style</p>
+	</div>
+</section>
+
+<!-- features -->
+<section id="feature">
+	<div class="title-text">
+		<p>FEATURES</p>
+		<h1>Why Choose Us</h1>
+	</div>
+
+	<div class="feature-box">
+		<div class="features">
+			<h1>Experienced Staff</h1>
+			<div class="features-desc">
+				<div class="feature-icon">
+					<i class="fa fa-shield"></i>
+				</div>
+				<div class="feature-text">
+					<p>We offer the best shoes in east and central Africa.</p>
+				</div>
+			</div>
+
+			<h1>Pre Booking Online</h1>
+			<div class="features-desc">
+				<div class="feature-icon">
+					<i class="fa fa-check-square-o"></i>
+				</div>
+				<div class="feature-text">
+					<p>You can contact us through our whatsapp number or by email.</p>
+				</div>
+			</div>
+
+			<h1>Affordable Cost</h1>
+			<div class="features-desc">
+				<div class="feature-icon">
+					<i class="fa fa-inr"></i>
+				</div>
+				<div class="feature-text">
+					<p>We offer at relatively affordable prices .</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+</section>
+
+<!-- Service -->
+<section id="service">
+	<div class="title-text">
+		<p>SERVICES</p>
+		<h1>We Provide Better</h1>
+	</div>
+
+	<div class="service-box">
+		<div class="single-service">
+			<img src="img/img-1.jpg">
+		</div>
+
+		<div class="single-service">
+			<img src="img/img-2.jpg">
+		</div>
+
+		<div class="single-service">
+			<img src="img/img-3.jpg">
+		</div>
+
+		<div class="single-service">
+			<img src="img/img-4.jpg">
+		</div>
+
+	</div>
+</section>
+
+<table class="centre" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Kicks by 38 KE</td>
+    <td>Telvin Kin</td>
+    <td>Kenya</td>
+  </tr>
+  <tr>
+    <td>Kicks by waffles SA</td>
+    <td>Waffles Unc</td>
+    <td>South Africa</td>
+  </tr>
+</table>
+
+<!-- footer -->
+<section id="footer">
+	<div class="title-text">
+		<p>CONTACT</p>
+		<h1>Visit Shop Today</h1>
+	</div>
+	<div class="footer-row">
+	<div class="footer-left">
+		<h1>Opening Hours</h1>
+		<p><i class="fa fa-clock-o"></i> Monday to Friday - 9:00am to 9:00pm</p>
+		<p><i class="fa fa-clock-o"></i> Saturday and Sunday - 2:00pm to 9:00pm</p>
+	</div>
+	<div class="footer-right">
+		<h1>Get In Touch</h1>
+		<p>CBD Jamuhuri plaza 3RD floor<i class="fa fa-map-marker"></i> </p>
+		<p>kintelvin@gmail.com<i class="fa fa-paper-plane"></i> </p>
+		<p>+254 78678900<i class="fa fa-phone"></i> </p>
+	</div>
+	</div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+            const formBox = document.getElementById("formBox");
+            const nameField = document.getElementById("nameField");
+            const signupBtn = document.getElementById("signupBtn");
+            const signinBtn = document.getElementById("signinBtn");
+
+            signupBtn.addEventListener("click", function() {
+                formBox.style.display = "block";
+                nameField.classList.remove("show");
+                document.getElementById("title").innerText = "Sign Up";
+                document.getElementById("submit").innerText = "Sign Up";
+            });
+
+signinBtn.addEventListener("click", function() {
+                formBox.style.display = "block";
+                nameField.classList.add("hidden");
+                document.getElementById("title").innerText = "Sign In";
+                document.getElementById("submit").innerText = "Sign In";
+            });
+        });
+</script>
+</body>
+</html>
